@@ -12,5 +12,6 @@ namespace SampleControllers.Interfacess
         void UpdateProductPrice(decimal newPrice, string name);
         void UpdateProductQuantity(string name, int quantity);
         Dictionary<Product, int> GetAllProducts();
+        List<Product> GetAllProductList();
     }
 }

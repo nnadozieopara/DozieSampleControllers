@@ -70,5 +70,10 @@ namespace SampleControllers.Services
         {
             return ProductDataBase;
         }
+
+        public List<Product> GetAllProductList()
+        {
+            return ProductDataBase.Keys.ToList();
+        }
     }
 }

@@ -46,5 +46,12 @@ namespace SampleControllers.Controllers
             productService.GetAllProducts();
             return Ok();
         }
+
+        [HttpGet("All Products List")]
+        public IActionResult GetAllProductList()
+        {
+            productService.GetAllProductList();
+            return Ok();
+        }
     }
 }
