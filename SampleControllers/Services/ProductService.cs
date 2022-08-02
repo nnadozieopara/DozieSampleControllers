@@ -23,6 +23,11 @@ namespace SampleControllers.Services
             }
         }
 
+        //public void CreateProduct(Product product)
+        //{
+        //    ProductDataBase.Add(product, 1);
+        //}
+
         public void CreateProduct(string name, string description, decimal price, int quantity)
         {
             var productCheck = ProductDataBase.FirstOrDefault(x => x.Key.Name == name);
